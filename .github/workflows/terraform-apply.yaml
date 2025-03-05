@@ -37,5 +37,5 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: terraform-state
-        path: terraform-state/
+        path: terraform-tfstate
         compression-level: 0

@@ -26,11 +26,7 @@ jobs:
       uses: actions/download-artifact@v4
       with:
         name: terraform-state
-        path: .
-    
-    - name: Move Terraform State
-      run: |
-        mv terraform-state/terraform.tfstate .
+        path: ./
     
     - name: Terraform Destroy
       run: |
