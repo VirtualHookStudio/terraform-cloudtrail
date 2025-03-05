@@ -38,4 +38,4 @@ jobs:
       with:
         name: terraform-state
         path: terraform-state/
-        retention-days: 90
+        compression-level: 0
