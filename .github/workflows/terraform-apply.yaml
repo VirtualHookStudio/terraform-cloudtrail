@@ -34,6 +34,5 @@ jobs:
         cp terraform.tfstate terraform-state/
     
     - name: Upload Terraform State
-      uses: actions/upload-artifact@v4
-      with:
-        path: terraform.tfstate
+      run: |
+        aws s3 cp terraform.tfstate s3://tfstate-terraform-vinihemming/terraform.tfstate
