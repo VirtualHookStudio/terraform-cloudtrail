@@ -35,4 +35,4 @@ jobs:
     
     - name: Upload Terraform State
       run: |
-        aws s3 cp terraform.tfstate s3://tfstate-terraform-vinihemming/terraform.tfstate
+        aws s3 cp terraform.tfstate s3://your-bucket/terraform.tfstate
